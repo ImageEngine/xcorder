@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="1920"
+   height="1080"
+   id="svg2826">
+  <defs
+     id="defs2828">
+    <filter
+       color-interpolation-filters="sRGB"
+       id="filter5070">
+      <feGaussianBlur
+         id="feGaussianBlur5072"
+         stdDeviation="3.75" />
+    </filter>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       width="1920"
+       height="1080"
+       ry="8.727273"
+       x="0"
+       y="0"
+       id="rect2842"
+       style="fill:#000000;fill-opacity:0;stroke:#ff0000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;filter:url(#filter5070)" />
+  </g>
+</svg>
