@@ -17,6 +17,8 @@ from video import Video
 from exporter import Exporter
 from recorder import Recorder
 
+scriptDir = os.path.dirname(os.path.realpath(__file__))
+
 # =============================================================================
 # CLASSES
 # =============================================================================
@@ -58,7 +60,7 @@ class Gui(QtGui.QWidget):
         self.populateVideoComboBox()
         self.populateAudioComboBox()
 
-        self.recordPushButton.setIcon(QtGui.QIcon('rec_btn_off.svg'))
+        self.recordPushButton.setIcon(QtGui.QIcon(os.path.join(scriptDir, 'rec_btn_off.svg')))
         self.recordPushButton.setChecked(False)
         self.recordPushButton.setEnabled(False)
 
@@ -106,13 +108,13 @@ class Gui(QtGui.QWidget):
         if self.recordPushButton.isChecked():
             self.videoComboBox.setEnabled(False)
             self.audioComboBox.setEnabled(False)
-            self.recordPushButton.setIcon(QtGui.QIcon('rec_btn_on.svg'))
+            self.recordPushButton.setIcon(QtGui.QIcon(os.path.join(scriptDir, 'rec_btn_on.svg')))
 
             self.startRecorder()
         else:
             self.videoComboBox.setEnabled(True)
             self.audioComboBox.setEnabled(True)
-            self.recordPushButton.setIcon(QtGui.QIcon('rec_btn_off.svg'))
+            self.recordPushButton.setIcon(QtGui.QIcon(os.path.join(scriptDir, 'rec_btn_off.svg')))
 
             self.stopRecorder()
 
