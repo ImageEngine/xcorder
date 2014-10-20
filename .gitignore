@@ -1,0 +1,4 @@
+*.pyc
+*.sw?
+*.qrc
+*.sconsign.dblite
